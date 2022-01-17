@@ -15,6 +15,11 @@ body {
 .container {
   width: 900px;
   max-width: 100%;
+  margin: 0 auto;
+  
+}
+.ta-c {
+  text-align: center;
 }
 
 a {
@@ -29,12 +34,14 @@ li {
 //==VARS==
 $base: 4px;
 
+$white: #fff;
+
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 $fw-semibold: 600;
 $fw-extrabold: 900;
-@mixin dssans {
+@mixin dmsans {
   font-family: 'DM Sans', sans-serif;
 }
 @mixin mulish {
@@ -46,19 +53,20 @@ $fw-extrabold: 900;
 .header {
   background: url(../img/header-bg.png);
   background-position: 50% 50%;
-  height: 915px;
+  height: 688px;
+
   
   &__nav-item {
     .menu-items {
       display: flex;
       .menu-item {
         &__link {
-          color: #fff;
+          color: $white;
           font-size: $base * 4;
           font-weight: $fw-medium;
         }
         &__link:hover {
-          color: darken(#fff, 5%);
+          color: darken($white, 5%);
         }
       }
       .menu-item:not(:first-child) {
@@ -69,17 +77,17 @@ $fw-extrabold: 900;
   &__nav-btn {
     .nav-btn {
       background: transparent;
-      border: 1px solid #fff;
+      border: 1px solid $white;
       border-radius: 7px;
       font-size: $base * 4;
       font-weight: $fw-bold;
-      color: #fff;
+      color: $white;
       line-height: 2;
       padding: 15px 30px;
       cursor: pointer;
     }
     .nav-btn:hover {
-      background-color: darken(#fff, 2%);
+      background-color: darken($white, 2%);
       color: #000;
     }
   }
@@ -92,4 +100,121 @@ nav {
   justify-content: space-between;
   padding-top: $base * 4;
 }
+
+.banner-inner {
+  display: flex;
+  flex-direction: column;
+  @include mulish;
+  &__title {
+    margin-top: $base * 42;
+    font-size: $base * 13;
+    color: $white;
+    margin-bottom: $base * 5;
+  }
+  &__text {
+    width: 690px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $base * 5;
+  }
+  &__card {
+    display: flex;
+    margin: 0 auto;
+    margin-top: $base * 4;
+    
+    .banner-card__left {
+      &_title {
+        color: $white;
+        font-size: $base * 4;
+        font-weight: $fw-semibold;
+      }
+    }
+    .banner-card__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      &_title {
+        color: $white;
+        font-size: $base * 4;
+        font-weight: $fw-semibold;
+        margin-bottom: $base*4;
+      }
+      img {
+        background-color: $white;
+        border-radius: 7px;
+        width: 180px;
+        height: 70px;
+        margin-bottom: $base*2;
+      }
+    }
+  }
+  &__card_link {
+    color: $white;
+    font-size: 18px;
+    font-weight: $fw-regular;
+    
+    .link {
+      color: #033573;
+      cursor: pointer;
+    }
+    .link::after {
+      content: '';
+      background-image: url(../img/icon-arrow.svg);
+      display: inline-block;
+      width: 10px;
+      height: 14px;
+      margin-left: $base;
+    }
+  }
+}
 //==/Header==
+
+//==How-to-add==
+.how-to-add {
+  background-image: url(../img/how-to-add-img.png);
+  background-position: 50% 50%;
+  padding-top: 100px;
+  top: 0;
+  .section-inner {
+    @include dmsans;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    .how-to-add__card-left {
+      
+      .card-left_text {
+        box-sizing: border-box;
+        text-align: left;
+        color: $white;
+        width: 300px;
+        font-weight: $fw-regular;
+        font-size: $base * 4;
+        line-height: 28px;
+
+        .link {
+          font-weight: $fw-medium;
+          color: #033573;
+        }
+      }
+      
+    }
+    .how-to-add__card-right {
+      .card-right_text {
+        text-align: left;
+        color: $white;
+        width: 300px;
+        font-weight: $fw-regular;
+        font-size: $base * 4;
+        line-height: 28px;
+        .link {
+          font-weight: $fw-medium;
+          color: #033573;
+        }
+      }
+    }
+
+  }
+}
+
+//==/How-to-add==

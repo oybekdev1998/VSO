@@ -1,1 +1,177 @@
-@import"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@600;700;800&display=swap";*{margin:0;padding:0;box-sizing:border-box}body{width:100%;max-width:100%;margin:0 auto}.container{width:900px;max-width:100%}a{text-decoration:none;color:#fff}li{list-style:none}.header{background:url(../img/header-bg.png);background-position:50% 50%;height:915px}.header__nav-item .menu-items{display:flex}.header__nav-item .menu-items .menu-item__link{color:#fff;font-size:16px;font-weight:500}.header__nav-item .menu-items .menu-item__link:hover{color:#f2f2f2}.header__nav-item .menu-items .menu-item:not(:first-child){margin-left:48px}.header__nav-btn .nav-btn{background:transparent;border:1px solid #fff;border-radius:7px;font-size:16px;font-weight:700;color:#fff;line-height:2;padding:15px 30px;cursor:pointer}.header__nav-btn .nav-btn:hover{background-color:#fafafa;color:#000}nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:16px}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: url(../img/header-bg.png);
+  background-position: 50% 50%;
+  height: 688px;
+}
+.header__nav-item .menu-items {
+  display: flex;
+}
+.header__nav-item .menu-items .menu-item__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header__nav-item .menu-items .menu-item__link:hover {
+  color: #f2f2f2;
+}
+.header__nav-item .menu-items .menu-item:not(:first-child) {
+  margin-left: 48px;
+}
+.header__nav-btn .nav-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.header__nav-btn .nav-btn:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+
+nav {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.banner-inner {
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+}
+.banner-inner__title {
+  margin-top: 168px;
+  font-size: 52px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.banner-inner__text {
+  width: 690px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+}
+.banner-inner__card {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.banner-inner__card .banner-card__left_title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.banner-inner__card .banner-card__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.banner-inner__card .banner-card__right_title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.banner-inner__card .banner-card__right img {
+  background-color: #fff;
+  border-radius: 7px;
+  width: 180px;
+  height: 70px;
+  margin-bottom: 8px;
+}
+.banner-inner__card_link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.banner-inner__card_link .link {
+  color: #033573;
+  cursor: pointer;
+}
+.banner-inner__card_link .link::after {
+  content: "";
+  background-image: url(../img/icon-arrow.svg);
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  margin-left: 4px;
+}
+
+.how-to-add {
+  background-image: url(../img/how-to-add-img.png);
+  background-position: 50% 50%;
+  padding-top: 100px;
+  top: 0;
+}
+.how-to-add .section-inner {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.how-to-add .section-inner .how-to-add__card-left .card-left_text {
+  box-sizing: border-box;
+  text-align: left;
+  color: #fff;
+  width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.how-to-add .section-inner .how-to-add__card-left .card-left_text .link {
+  font-weight: 500;
+  color: #033573;
+}
+.how-to-add .section-inner .how-to-add__card-right .card-right_text {
+  text-align: left;
+  color: #fff;
+  width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.how-to-add .section-inner .how-to-add__card-right .card-right_text .link {
+  font-weight: 500;
+  color: #033573;
+}
